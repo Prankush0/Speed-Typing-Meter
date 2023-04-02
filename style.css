@@ -1,0 +1,85 @@
+body{
+    background: rgb(32,47,108);
+    background: linear-gradient(90deg, rgba(32,47,108,1) 0%, rgba(121,9,79,1) 45%, rgba(2,207,224,1) 73%, rgba(0,73,255,1) 100%);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.bar{
+    width:100vw;
+    height:5vw;
+    /* background-color: grey; */
+    background:
+    linear-gradient(135deg, #60014b 25%, transparent 25%) -50px 0,
+    linear-gradient(225deg, #60014b  25%, transparent 25%) -50px 0,
+    linear-gradient(315deg, #60014b 25%, transparent 25%),
+    linear-gradient(45deg, #60014b  25%, transparent 25%);
+    background-size: 270px 26px;
+    background-color: #ff002b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    font-weight: bolder;
+}
+.bar span{
+    width:21vw;
+    background-color: rgba(23, 23, 23, 0.693);
+    color: aquamarine;
+    height:3vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    animation-name: slide;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    font-size: 1.6vw;
+}
+@keyframes slide{
+  0%{transform:translateX(0vw) }
+  25%{transform:translateX(-20vw) }
+  75%{transform:translateX(20vw) }
+  100%{transform:translateX(0vw) }
+
+}
+#para{
+    display: flex;
+    position: absolute;
+    top:12vh;
+    left:10vw;
+    height:35vh;
+    width:80vw;
+    background-color: rgb(42, 40, 40);
+    color: aquamarine;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid gainsboro;
+    border-radius: 5px;
+    padding:9px;
+}
+.typetext{
+    position: relative;
+    top:54vh;
+    left:12vw;
+    width:12vw;
+}
+input[type="text"] {
+    background-color: #1e1c1c;
+    color:#ECEDDC;
+    border: 3px solid aqua;
+    text-align: center;
+    padding-left:40px; 
+    padding-right:40px; 
+}
+  
+.typetext #type{
+    font-size: 1.2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    width: 70vw;
+    border-radius:35px;
+}
