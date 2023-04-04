@@ -30,6 +30,10 @@ accuracy=0
 // }
 // });
 
+//keycode for enter is 13
+// Enter twice to reload
+// when user presses enter for the first time it shows typing reults.
+// and when enter is pressed for the second time the site reloads
 let enterCount = 0;
 myInput.addEventListener("keyup", function(event) {
     if (event.keyCode === 13) {
@@ -41,6 +45,7 @@ myInput.addEventListener("keyup", function(event) {
             endTime=new Date()
         var timeElapsed=(endTime-startTime)/1000
         //   alert(x.length/timeElapsed)
+       // SPLIT INTO WORDS TO CHECK ACCURACY         
         var TextInput = document.getElementById("type").value;
         WordsTextInput=TextInput.split(" ")
         Wordsx=x.split(" ")
