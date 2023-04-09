@@ -13,7 +13,7 @@ body{
     linear-gradient(135deg, #60014b 25%, transparent 65%) -50px 0,
     linear-gradient(225deg, #60014b  25%, transparent 34%) -50px 0,
     linear-gradient(315deg, #60014b 25%, transparent 29%),
-    linear-gradient(46deg, rgba(2,207,224,1)  25%, transparent 29%)
+    linear-gradient(46deg, rgba(2,207,224,1)  25%, transparent 29%);
     background-size: 270px 26px;
     background-color: #ff002b;
     display: flex;
