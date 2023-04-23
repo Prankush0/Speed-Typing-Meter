@@ -49,12 +49,12 @@ myInput.addEventListener("keyup", function(event) {
         var TextInput = document.getElementById("type").value;
         WordsTextInput=TextInput.split(" ")
         Wordsx=x.split(" ")
-    for(let i=0;i<TextInput.length;i++){
+    for(let i=0;i<WordsTextInput.length;i++){
         if(WordsTextInput[i]==Wordsx[i]){
             accuracy+=1 
         }
     }
-    accuracy=(accuracy/TextInput.length)*100
+    accuracy=(accuracy/Wordsx.length)*100
     // alert("Timer stopped :"+timeElapsed+"\nCharacters per second:"+x.length/timeElapsed+"\nAccuracy: "+accuracy+"%");
     para.innerHTML="<em><u>Results:-</u>"+"<br>Time elapsed: "+timeElapsed+" seconds<br>Characters per second: "+x.length/timeElapsed+"<br>Accuracy: "+accuracy+"%</em>"
         }
