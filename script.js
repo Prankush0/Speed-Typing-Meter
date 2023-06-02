@@ -56,7 +56,7 @@ myInput.addEventListener("keyup", function(event) {
     }
     accuracy=(accuracy/Wordsx.length)*100
     // alert("Timer stopped :"+timeElapsed+"\nCharacters per second:"+x.length/timeElapsed+"\nAccuracy: "+accuracy+"%");
-    para.innerHTML="<em><u>Results:-</u>"+"<br>Time elapsed: "+timeElapsed+" seconds<br>Characters per second: "+x.length/timeElapsed+"<br>Accuracy: "+accuracy+"%</em>"
+    para.innerHTML="<em><u>Results:-</u>"+"<br>Time elapsed: "+timeElapsed+" seconds<br>Characters per second: "+TextInput.length/timeElapsed+"<br>Accuracy: "+accuracy+"%</em>"
         }
     }
 });
